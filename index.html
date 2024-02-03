@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Home</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <style>
+
+        body{
+            background-color: rgb(241, 241, 241);
+        }
+    
+    .container-fluid .row .col-auto .d-flex ul li a{
+        color: aliceblue;
+    }
+
+        .container-fluid .row .col-auto .d-flex ul li a:hover{
+            transform: translateX(1rem);
+            transition: 0.5s;
+        }
+
+        .container-fluid .row .col .container-details{
+            
+             
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 6rem;
+
+            flex-wrap: wrap;
+        }
+
+
+        .container-fluid .row .col .container-details  .details-box{
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+
+            padding: 2rem;
+
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+        .container-fluid .row .col .details-box h1,h3{
+            font-size: 1.5rem;
+
+            text-transform: capitalize;
+            font-weight: 600;
+            color: rgb(20, 20, 20);
+            
+        }
+
+        .container-fluid .row .col .details-box h3{
+            margin-left: 5rem;
+        }
+
+
+
+        .folders-container{
+            background-color: transparent;width: 100%;display: flex;flex-direction: row;flex-wrap: wrap; gap: 3rem;justify-content: center;align-items: center;margin-top: 3rem;background-color: transparent;padding: 1.5rem;
+        }
+
+        .folders-container .folder-box{
+            display: flex;flex-direction: column; background-color: rgb(252, 252, 252);padding: 2rem; 
+
+        }
+
+
+        .folders-container .file-box i{
+            color: #393838 !important;
+        }
+
+        .folders-container .file-box h4{
+            margin-top: 0.5rem !important;
+        }
+
+        .folders-container .folder-box i{
+            font-size: 5rem;
+            color: #F8D775;
+
+        }
+
+
+        .folders-container a{
+            text-decoration: none;
+        }
+
+        .folders-container .folder-box h4{
+            text-align: center;
+            color: #393838;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-top: 0.1rem;
+            font-size: 1rem;
+
+        }
+
+
+        .folders-container .folder-box:hover{
+            background-color: #c4c4c4;
+        }
+        
+
+
+        .folders-container .folder-box:active{
+            background-color: rgb(233, 233, 233) !important;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container-fluid" >
+        <div class="row flex-nowrap">
+            <div id="bar" class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100 buttons-li">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fa-solid fa-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                       
+               
+
+
+                        
+                        <li>
+                            <a href="#" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-users-gear"></i> <span class="ms-1 d-none d-sm-inline">Users</span> </a>
+                        </li>
+                        
+                        <li>
+                            <a href="alterpage.html" class="nav-link px-0 align-middle">
+                                <i class="fa-solid fa-gear"></i> <span class="ms-1 d-none d-sm-inline">Settings</span> </a>
+                        </li>
+
+                       
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fa-regular fa-id-badge"></i> <span class="ms-1 d-none d-sm-inline">Sign-up</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fa-solid fa-right-from-bracket"></i><span class="ms-1 d-none d-sm-inline">Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="col py-3" style="overflow-y: auto !important; height: 100vh !important;">
+
+<h1 style="margin-left: 0.5rem;font-weight: 600;font-family: cursive;color: #232323;">Home page</h1>
+
+
+<div class="container-details" style="margin-top: 3rem;">
+    <div class="details-box">
+
+        <h1><i class="fa-solid fa-users" style="color: rgb(33, 150, 33);"></i> users</h1>
+        <h3>122</h3>
+    </div>
+    
+    <div class="details-box">
+        <h1><i class="fa-solid fa-folder" style="color: #F8D775;"></i> folders</h1>
+        <h3>122</h3>
+    </div>
+    
+    <div class="details-box">
+        <h1><i class="fa-solid fa-file" style="color: #12082e;"></i> files</h1>
+        <h3>122</h3>
+    </div>
+</div>
+
+
+<!-- <div class="input-group rounded" style="position: relative !important;width: 50%;margin: auto;margin-top: 4rem;">
+    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" style="padding: 0.7rem;" />
+    <span class="input-group-text border-0" id="search-addon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div> -->
+
+
+
+
+  
+<button style="background-color: #393838; position: relative; left: 44%;top: 5%;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"><i class="fa-solid fa-square-plus"></i><span style="margin-left: 0.5rem;">Add folder</span></button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New directory</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Directory name: /</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">For:</label>
+            <select name=""  type="text" class="form-control" id="recipient-name2">
+
+                <option value="">Select user</option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="folders-container" >
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+
+<a href="files.html">
+    <div class="folder-box btn btn-primary">
+        <i class="fas fa-folder"></i>
+        <h4>folder</h4>
+    </div>
+</a>
+
+  </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/bootstrapbundlemin.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
+    <script type= "text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
